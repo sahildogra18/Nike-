@@ -7,11 +7,7 @@ import Menu from "./pages/Menu";
 import Location from "./pages/Location";
 
 function App() {
-<<<<<<< HEAD
-=======
-  
 
->>>>>>> ca17fda026c7c0a627bce23e4f5cf7feea0f5ed1
   return (
     <>
       <Navbar />
