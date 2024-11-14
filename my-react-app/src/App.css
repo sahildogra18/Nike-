@@ -1,0 +1,54 @@
+.logo{
+  width: 60px;
+}
+
+.btn{
+  background-color: red;
+  color: white;
+  border: none;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rr{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.shoe{
+  width: 600px;
+}
+body{
+  background-color: white;
+}
+
+.line{
+  font-weight: bold;
+  font-size: 60px
+}
+.fc{
+  display: flex;
+}
+button {
+  margin: 2px 2px 2px 5px;
+  padding: 5px;
+  
+}
+.gg{
+  color: rgb(84, 84, 74);
+}
+.amazon{
+  width: 50px;
+}
+.flipkart{
+  width: 50px;
+}
+.rt{
+  display: flex;
+}
+.war{
+  color: rgb(84, 84, 74);
+}
