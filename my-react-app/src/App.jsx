@@ -13,9 +13,7 @@ function App() {
       <Navbar />
       <Herosection />
       <Routes>
-        <Route path="/Menu" element={<Herosection />} />
-        <Route path="/Menu" element={<Navbar />} />
-        <Route path="/Menu" element={<Menu />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/location" element={<Location />} />
       </Routes>
     </>
