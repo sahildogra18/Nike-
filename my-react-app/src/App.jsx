@@ -7,19 +7,12 @@ import Menu from "./pages/Menu";
 import Location from "./pages/Location";
 
 function App() {
-<<<<<<< HEAD
-=======
-  
-
->>>>>>> ca17fda026c7c0a627bce23e4f5cf7feea0f5ed1
   return (
     <>
-      <Navbar />
-      <Herosection />
       <Routes>
-        <Route path="/Menu" element={<Herosection />} />
-        <Route path="/Menu" element={<Navbar />} />
-        <Route path="/Menu" element={<Menu />} />
+        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<Herosection />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/location" element={<Location />} />
       </Routes>
     </>
