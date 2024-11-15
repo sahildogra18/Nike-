@@ -265,6 +265,16 @@ a.active{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   border: 2px solid black;
+}
+
+.fr{
+  padding: 10px;
+  font-weight: bold;
+  font-size: medium;
+  border: 2px solid black;
+  border-radius: 10px;
+  
 }

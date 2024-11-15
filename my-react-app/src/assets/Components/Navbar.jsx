@@ -1,17 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Products from "../../pages/Products";
 
 function Navbar() {
-  const [products, setProducts] = useState([]);
-
-  async function clickMe() {
-    const response = await fetch(`https://fakestoreapi.com/products`);
-    const data = await response.json();
-    setProducts(data);
-    console.log(data);
-  }
-
   return (
     <>
       <nav>
@@ -26,17 +16,7 @@ function Navbar() {
         </NavLink>
 
         <NavLink to="/cr7">
-          <div className="product-list">
-            <div onClick={clickMe}>CR7 Fashion</div>
-            {products.map((product) => (
-              <Products
-                key={product.id}
-                image={product.image}
-                title={product.title}
-                price={product.price}
-              />
-            ))}
-          </div>
+          <div>CR7 Fashion</div>
         </NavLink>
 
         <NavLink to="/menu">

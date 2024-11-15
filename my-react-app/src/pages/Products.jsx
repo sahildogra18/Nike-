@@ -1,14 +1,34 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 function Products({ image, title, price }) {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      const response = await fetch(`https://fakestoreapi.com/products`);
+      const data = await response.json();
+      setProducts(data);
+      console.log(data);
+    }
+
+    fetchProducts();
+  }, []);
+
   return (
     <>
-      <div className="harry">
-        <img src={image} alt={title} className="product-image" />
-        <h2>{title}</h2>
-        <span>
-          <button>{price} </button>
-        </span>
+      <div className="ff">
+        {products.map((product) => (
+          <div key={product.id} className="harry">
+            <img
+              src={product.image}
+              alt={product.title}
+              className="product-image"
+            />
+            <h2>{product.title}</h2>
+            <button className="fr">{product.price}</button>
+          </div>
+        ))}
       </div>
     </>
   );
