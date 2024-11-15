@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import RResponse from "../../pages/Products";
+import Products from "../../pages/Products";
 
 function Navbar() {
   const [products, setProducts] = useState([]);
@@ -29,7 +29,7 @@ function Navbar() {
           <div className="product-list">
             <div onClick={clickMe}>CR7 Fashion</div>
             {products.map((product) => (
-              <RResponse
+              <Products
                 key={product.id}
                 image={product.image}
                 title={product.title}
