@@ -26,7 +26,7 @@ function Products({ image, title, price }) {
               className="product-image"
             />
             <h2>{product.title}</h2>
-            <button className="fr">{product.price}</button>
+            <button className="fr">{product.price}$</button>
           </div>
         ))}
       </div>

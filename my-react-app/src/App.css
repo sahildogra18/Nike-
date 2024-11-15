@@ -111,7 +111,7 @@ header {
 
 .hero {
   background-image: url('https://static.nike.com/a/images/w_1920,c_limit/da296cfc-a1a8-4f54-878e-c9301fba1deb/image.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   height: 400px;
   display: flex;
